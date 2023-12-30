@@ -1,0 +1,97 @@
+#todo-wrapper {
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+#todo-wrapper #todo-title {
+    font-size: 1.8rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#todo-body {
+    font-size: 1.1rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    margin-bottom: 20px;
+    opacity: 80%;
+}
+
+.todo-bottom-wrapper {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.todo-bottom-wrapper #created-on {
+    font-size: 0.8rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 500;
+    opacity: 40%;
+}
+
+.todo-bottom-wrapper #todo-id {
+    font-size: 0.8rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 500;
+    opacity: 40%;
+}
+
+#todo-wrapper .todo-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#todo-wrapper .todo-top-wrapper #todo-status {
+    width: 40px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50px;
+    position: relative;
+}
+
+#todo-wrapper .todo-top-wrapper #todo-status:hover {
+    cursor: pointer;
+}
+
+#toggle-ball {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+#todo-wrapper .todo-top-wrapper #todo-status.active {
+    background-color: #00b87c;
+}
+
+#todo-delete {
+    width: 2px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+#todo-delete::before {
+    content: "";
+    width: 2px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+#toggle-ball.active {
+    left: 22px;
+}

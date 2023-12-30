@@ -1,0 +1,75 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    width: clamp(300px, 40%, 400px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+#logo {
+    font-size: 3rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 700;
+}
+
+#title,
+#desc {
+    font-size: 1.5rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.sidebar input,
+.sidebar textarea {
+    padding: 10px;
+    width: clamp(300px, 100%, 350px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sidebar input:focus,
+.sidebar textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.sidebar textarea {
+    height: 100px;
+    resize: none;
+}
+
+.sidebar button {
+    padding: 10px;
+    width: clamp(320px, 100%, 375px);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-section {
+    font-family: "Familjen Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.top-section .button-section {
+    display: flex;
+}
